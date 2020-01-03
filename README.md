@@ -1,0 +1,2 @@
+# WebGLReloaderForUnity
+UnityのWebGLビルドでページ再読み込みやアラートの設定を行うためのプラグイン
