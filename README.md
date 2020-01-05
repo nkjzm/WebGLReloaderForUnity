@@ -22,6 +22,8 @@ nkjzm.WebGLHandler.IsEnabledBeforeUnloadEvent();
 nkjzm.WebGLHandler.Reload();
 ```
 
+Ref: [UnityのWebGLビルドでページ再読み込みやアラートの設定を行うためのプラグイン【WebGLReloaderForUnity】 ](https://qiita.com/nkjzm/items/da1b6c1ad11fede742d6)
+
 ## Author
 
 [@nkjzm](https://twitter.com/nkjzm)
