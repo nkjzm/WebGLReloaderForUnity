@@ -5,7 +5,7 @@ namespace nkjzm.Example
 {
     public class Example : MonoBehaviour
     {
-        [SerializeField] Button SwitchButton = null;
+        [SerializeField] Button EnableButton = null, DisableButton = null;
         [SerializeField] Text StatusText = null;
         [SerializeField] Button Reload = null;
 
@@ -13,18 +13,17 @@ namespace nkjzm.Example
         {
             UpdateStatus();
 
-            SwitchButton.onClick.AddListener(() =>
+            // BeforeUnloadの有効化
+            EnableButton.onClick.AddListener(() =>
             {
-                if (WebGLHandler.IsEnabledBeforeUnloadEvent())
-                {
-                    // 無効化
-                    WebGLHandler.DisableBeforeUnloadEvent();
-                }
-                else
-                {
-                    // 有効化
-                    WebGLHandler.EnableBeforeUnloadEvent();
-                }
+                WebGLHandler.EnableBeforeUnloadEvent();
+                UpdateStatus();
+            });
+
+            // BeforeUnloadの無効化
+            DisableButton.onClick.AddListener(() =>
+            {
+                WebGLHandler.DisableBeforeUnloadEvent();
                 UpdateStatus();
             });
 
