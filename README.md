@@ -22,6 +22,10 @@ nkjzm.WebGLHandler.IsEnabledBeforeUnloadEvent();
 nkjzm.WebGLHandler.Reload();
 ```
 
+## Author
+
+[@nkjzm](https://twitter.com/nkjzm)
+
 ## License
 
 [MIT](https://github.com/nkjzm/WebGLReloaderForUnity/blob/master/LICENSE)
